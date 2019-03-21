@@ -1,35 +1,30 @@
 package com.leucotron.pontointeligente.api.utils;
 
-import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 public class PasswordUtils {
-	
-	private static final String SENHA = "123456";
 
-    private static String gerarBCrypt(String SENHA) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-	private final BCryptPasswordEncoder bCryptEncoder = new BCryptPasswordEncoder();
+    private static final Logger log = LoggerFactory.getLogger(PasswordUtils.class);
 
-	@Test
-	public void testSenhaNula() throws Exception {
-		assertNull(PasswordUtils.gerarBCrypt(null));
-	}
-	
-	@Test
-	public void testGerarHashSenha() throws Exception {
-		String hash = PasswordUtils.gerarBCrypt(SENHA);
-		
-		assertTrue(bCryptEncoder.matches(SENHA, hash));
-	}
-
-    private void assertNull(String gerarBCrypt) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public PasswordUtils() {
     }
 
-    private void assertTrue(boolean matches) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    /**
+     * Gera um hash utilizando o BCrypt.
+     *
+     * @param senha
+     * @return String
+     */
+    public static String gerarBCrypt(String senha) {
+        if (senha == null) {
+            return senha;
+        }
+
+        log.info("Gerando hash com o BCrypt.");
+        BCryptPasswordEncoder bCryptEncoder = new BCryptPasswordEncoder();
+        return bCryptEncoder.encode(senha);
     }
 
 }
