@@ -7,8 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class JApplication {
 
 	public static void main(String[] args) {
-                System.out.println("Hello, World!!");
-                System.out.println("HUE br");
+            SpringApplication.run(JApplication.class, args);   
 	}
 
 }
