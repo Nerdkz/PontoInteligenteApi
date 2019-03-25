@@ -5,10 +5,17 @@
  */
 package com.leucotron.pontointeligente.repositories;
 
+import com.leucotron.pontointeligente.api.entities.Empresa;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.transaction.annotation.Transactional;
+
 /**
  *
  * @author vinicius
  */
-public class EmpresaRepository {
+public interface EmpresaRepository extends JpaRepository<Empresa, Long> {
+    
+    @Transactional(readOnly = true)
+    Empresa findByCnpj(String cnpj);
     
 }
