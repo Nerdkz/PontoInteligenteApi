@@ -7,12 +7,14 @@ package com.leucotron.pontointeligente.repositories;
 
 import com.leucotron.pontointeligente.api.entities.Empresa;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
  * @author vinicius
  */
+@Transactional(readOnly = true)
 public interface EmpresaRepository extends JpaRepository<Empresa, Long> {
     
     @Transactional(readOnly = true)
