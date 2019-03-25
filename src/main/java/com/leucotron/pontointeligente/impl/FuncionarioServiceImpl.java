@@ -33,11 +33,12 @@ public class FuncionarioServiceImpl implements FuncionarioService {
         log.info("Buscando funcionário pelo email {}", email);
         return Optional.ofNullable(this.funcionarioRepository.findByEmail(email));
     }
-
+    
     public Optional<Funcionario> buscarPorId(Long id) {
         log.info("Buscando funcionário pelo IDl {}", id);
         Optional<Funcionario> funcionario = this.funcionarioRepository.findById(id);
         return funcionario;
     }
+    
 
 }
