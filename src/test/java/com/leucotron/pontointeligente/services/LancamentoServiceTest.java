@@ -1,5 +1,6 @@
 package com.leucotron.pontointeligente.services;
 
+import com.leucotron.pontointeligente.api.services.LancamentoService;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
@@ -21,7 +22,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.leucotron.pontointeligente.api.entities.Lancamento;
-import com.leucotron.pontointeligente.repositories.LancamentoRepository;
+import com.leucotron.pontointeligente.api.repositories.LancamentoRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

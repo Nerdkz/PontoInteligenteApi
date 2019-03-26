@@ -1,5 +1,6 @@
 package com.leucotron.pontointeligente.services;
 
+import com.leucotron.pontointeligente.api.services.FuncionarioService;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
@@ -17,7 +18,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.leucotron.pontointeligente.api.entities.Funcionario;
-import com.leucotron.pontointeligente.repositories.FuncionarioRepository;
+import com.leucotron.pontointeligente.api.repositories.FuncionarioRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

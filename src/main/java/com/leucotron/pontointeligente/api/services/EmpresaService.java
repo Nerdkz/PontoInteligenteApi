@@ -1,4 +1,4 @@
-package com.leucotron.pontointeligente.services;
+package com.leucotron.pontointeligente.api.services;
 
 import java.util.Optional;
 

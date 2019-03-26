@@ -18,8 +18,6 @@ import com.leucotron.pontointeligente.api.entities.Empresa;
 import com.leucotron.pontointeligente.api.entities.Funcionario;
 import com.leucotron.pontointeligente.api.enums.PerfilEnum;
 import com.leucotron.pontointeligente.api.utils.PasswordUtils;
-import com.leucotron.pontointeligente.repositories.EmpresaRepository;
-import com.leucotron.pontointeligente.repositories.FuncionarioRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

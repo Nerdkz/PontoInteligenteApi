@@ -1,4 +1,4 @@
-package com.leucotron.pontointeligente.impl;
+package com.leucotron.pontointeligente.api.impl;
 
 import java.util.Optional;
 
@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.leucotron.pontointeligente.api.entities.Empresa;
-import com.leucotron.pontointeligente.repositories.EmpresaRepository;
-import com.leucotron.pontointeligente.services.EmpresaService;
+import com.leucotron.pontointeligente.api.repositories.EmpresaRepository;
+import com.leucotron.pontointeligente.api.services.EmpresaService;
 
 @Service
 public class EmpresaServiceImpl implements EmpresaService {

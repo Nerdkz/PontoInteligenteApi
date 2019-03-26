@@ -1,5 +1,6 @@
 package com.leucotron.pontointeligente.services;
 
+import com.leucotron.pontointeligente.api.services.EmpresaService;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
@@ -17,7 +18,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.leucotron.pontointeligente.api.entities.Empresa;
-import com.leucotron.pontointeligente.repositories.EmpresaRepository;
+import com.leucotron.pontointeligente.api.repositories.EmpresaRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

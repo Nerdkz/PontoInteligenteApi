@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.leucotron.pontointeligente.repositories;
+package com.leucotron.pontointeligente.api.repositories;
 
 import com.leucotron.pontointeligente.api.entities.Lancamento;
 import java.util.List;

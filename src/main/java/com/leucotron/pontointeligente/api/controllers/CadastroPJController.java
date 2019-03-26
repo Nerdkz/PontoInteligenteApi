@@ -1,14 +1,14 @@
-package com.leucotron.pontointeligente.controllers;
+package com.leucotron.pontointeligente.api.controllers;
 
 import com.leucotron.pontointeligente.api.entities.Empresa;
 import com.leucotron.pontointeligente.api.entities.Funcionario;
 import com.leucotron.pontointeligente.api.enums.PerfilEnum;
 import com.leucotron.pontointeligente.api.utils.PasswordUtils;
-import com.leucotron.pontointeligente.dtos.CadastroPJDto;
-import com.leucotron.pontointeligente.response.Response;
-import com.leucotron.pontointeligente.services.EmpresaService;
-import com.leucotron.pontointeligente.services.FuncionarioService;
-import com.leucotron.pontointeligente.services.LancamentoService;
+import com.leucotron.pontointeligente.api.dtos.CadastroPJDto;
+import com.leucotron.pontointeligente.api.response.Response;
+import com.leucotron.pontointeligente.api.services.EmpresaService;
+import com.leucotron.pontointeligente.api.services.FuncionarioService;
+import com.leucotron.pontointeligente.api.services.LancamentoService;
 import java.security.NoSuchAlgorithmException;
 import java.util.Optional;
 import javax.validation.Valid;

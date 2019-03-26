@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.leucotron.pontointeligente.dtos;
+package com.leucotron.pontointeligente.api.dtos;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;

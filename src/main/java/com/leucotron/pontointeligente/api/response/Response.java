@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.leucotron.pontointeligente.response;
+package com.leucotron.pontointeligente.api.response;
 
-import com.leucotron.pontointeligente.dtos.CadastroPJDto;
+import com.leucotron.pontointeligente.api.dtos.CadastroPJDto;
 import java.util.ArrayList;
 import java.util.List;
 

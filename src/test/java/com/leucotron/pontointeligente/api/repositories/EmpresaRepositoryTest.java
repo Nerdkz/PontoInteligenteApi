@@ -12,7 +12,6 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.leucotron.pontointeligente.api.entities.Empresa;
-import com.leucotron.pontointeligente.repositories.EmpresaRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

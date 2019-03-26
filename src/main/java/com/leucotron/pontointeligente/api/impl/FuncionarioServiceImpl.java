@@ -1,4 +1,4 @@
-package com.leucotron.pontointeligente.impl;
+package com.leucotron.pontointeligente.api.impl;
 
 import java.util.Optional;
 
@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.leucotron.pontointeligente.api.entities.Funcionario;
-import com.leucotron.pontointeligente.repositories.FuncionarioRepository;
-import com.leucotron.pontointeligente.services.FuncionarioService;
+import com.leucotron.pontointeligente.api.repositories.FuncionarioRepository;
+import com.leucotron.pontointeligente.api.services.FuncionarioService;
 
 @Service
 public class FuncionarioServiceImpl implements FuncionarioService {

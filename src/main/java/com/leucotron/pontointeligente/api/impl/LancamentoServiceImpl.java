@@ -1,4 +1,4 @@
-package com.leucotron.pontointeligente.impl;
+package com.leucotron.pontointeligente.api.impl;
 
 import java.util.Optional;
 
@@ -12,8 +12,8 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import com.leucotron.pontointeligente.api.entities.Lancamento;
-import com.leucotron.pontointeligente.repositories.LancamentoRepository;
-import com.leucotron.pontointeligente.services.LancamentoService;
+import com.leucotron.pontointeligente.api.repositories.LancamentoRepository;
+import com.leucotron.pontointeligente.api.services.LancamentoService;
 
 @Service
 public class LancamentoServiceImpl implements LancamentoService {
