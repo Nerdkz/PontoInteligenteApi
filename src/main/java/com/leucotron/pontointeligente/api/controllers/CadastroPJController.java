@@ -10,7 +10,6 @@ import com.leucotron.pontointeligente.api.services.EmpresaService;
 import com.leucotron.pontointeligente.api.services.FuncionarioService;
 import com.leucotron.pontointeligente.api.services.LancamentoService;
 import java.security.NoSuchAlgorithmException;
-import java.util.Optional;
 import javax.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
